@@ -1,8 +1,29 @@
 <!doctype html>
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    </head>
-    <body>
-        <script type="module" src="index.js"></script>
-    </body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<main>
+		<section id="conversation" class="conversation-container"></section>
+		
+		<form id="chat-form" class="chat-form">
+			<input 
+				type="text" 
+				id="user-input" 
+				placeholder="Ask about the weather and activities..."
+				required
+			>
+			<button type="submit">Send</button>
+		</form>
+	</main>
+	<script type="module" src="/index.js"></script>
+</body>
+
 </html>
